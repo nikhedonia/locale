@@ -1,0 +1,8 @@
+{
+  "name": "boost-locale",
+  "dependencies": {
+    "boost-config": "1.63.0",
+    "boost-thread": "1.63.0",
+    "icu4c": "58.2.0"
+  }
+}
