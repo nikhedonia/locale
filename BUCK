@@ -9,7 +9,7 @@ windows_sources = glob([
 ])
 
 cxx_library(
-  name = 'boost-locale', 
+  name = 'locale', 
   header_namespace = 'boost',
   exported_headers = subdir_glob([
     ('include/boost', '**/*.hpp'),
