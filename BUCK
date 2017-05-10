@@ -24,6 +24,9 @@ cxx_library(
     ('^linux.*', posix_sources),
     ('^windows.*', windows_sources),
   ],
+  compiler_flags = [
+    '-std=c++11', 
+  ],
   platform_compiler_flags = [
     ('default', ['-DBOOST_LOCALE_WITH_ICONV']), # TODO: Remove once macOS platform name is known 
     ('^macos.*', ['-DBOOST_LOCALE_WITH_ICONV']),
