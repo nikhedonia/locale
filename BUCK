@@ -30,7 +30,7 @@ cxx_library(
   platform_compiler_flags = [
     ('default', ['-DBOOST_LOCALE_WITH_ICONV']), # TODO: Remove once macOS platform name is known 
     ('^macos.*', ['-DBOOST_LOCALE_WITH_ICONV']),
-    ('^linux.*', []),
+    ('^linux.*', ['-DBOOST_LOCALE_WITH_ICONV']),
     ('^windows.*', []),
   ],
   visibility = [
